@@ -31,20 +31,21 @@ function Tasks() {
         setAllEntries([]);
     }
 
-    // const handleRemove = (e) => {
-    //     let numId = parseInt(e.target.id);
-    //     let newEntries = [...allEntries].filter(entry => {return entry.id !== numId});
-    //     setAllEntries(newEntries)
-    // }
+    const handleRemove = (e) => {
+        let numId = parseInt(e.target.id);
+        let newEntries = [...allEntries].filter(entry => {return entry.id !== numId});
+        setAllEntries(newEntries)
+    }
 
     //striking option
-    const handleRemove = (e) => {
-        if (e.target.closest('tr').style.textDecoration){
-            e.target.closest('tr').style.removeProperty('text-decoration','none');
-        } else {
-            e.target.closest('tr').style.setProperty('text-decoration', 'line-through');
-        }
-    } 
+    //https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
+    // const handleRemove = (e) => {
+    //     if (e.target.closest('tr').style.textDecoration){
+    //         e.target.closest('tr').style.removeProperty('text-decoration','none');
+    //     } else {
+    //         e.target.closest('tr').style.setProperty('text-decoration', 'line-through');
+    //     }
+    // } 
 
     return (
         <div>
