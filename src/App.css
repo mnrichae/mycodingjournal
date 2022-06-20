@@ -1,0 +1,36 @@
+
+
+
+
+.App {
+  margin: 100px;
+  padding: 500px;
+  text-align: center;
+}
+
+
+.labelThoughts{
+  width: 45%;
+
+}
+
+.date{
+  width: 50%;
+}
+
+.inputThoughts{
+  width: 50%;
+}
+
+.btnSave{
+  width: 100px;
+}
+
+button{
+  border: 0;
+  background-color: none !important;
+}
+
+.btnRemove{
+  background-color: none !important;
+}
